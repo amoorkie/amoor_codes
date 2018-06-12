@@ -1,0 +1,59 @@
+<?php
+require_once dirname(__FILE__).'/con.php';
+
+$counter = mysql_query('SELECT COUNT(`id`) FROM `blog`');
+$counter = mysql_fetch_array($counter);
+$pages = intval( ($counter[0] - 1) / $conf['pp']) + 1;
+
+
+if( isset($_GET['page'])) {
+// Да, пользователь что-то передал
+$page = (int) $_GET['page'];
+	if ( $page > 0 && $page <= $pages ) {
+		// Вычисляем с какого номера статьи надо начинать выводить
+		$start = $page * $conf['pp'] - $conf['pp'];
+		$sql = "SELECT * FROM `blog` ORDER BY `date` DESC LIMIT {$start}, {$conf['pp']}";
+	}
+	else { 
+		$sql = 'SELECT * FROM `blog` ORDER BY `date` DESC LIMIT '. $conf['pp']; 
+		$page = 1;
+	}
+}
+else {
+$sql = 'SELECT * FROM `blog` ORDER BY `date` DESC LIMIT '. $conf['pp'];
+$page = 1;
+}
+$otvet = mysql_query($sql);
+?>
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Мой блог</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+ 	<header>
+ 		<!-- шапка блога -->
+ 	</header>
+ 	<article> 
+ 		<!-- content -->
+ 		<?php
+ 		while($row = mysql_fetch_assoc($otvet)){
+ 			echo "<section>
+ 			<h2>{$row['title']}</h2>
+ 			{$row['content']}
+ 			<p class=\"date\">{$row['date']}</p>
+ 			</section>";
+ 		
+ 		}
+ 		?>
+ 	</article>
+<nav>
+<?php
+if( $page > 1 ) echo '<a href="index.php?page='.($page-1).'">← туда</a>';
+if( $page < $pages ) echo '<a href="index.php?page='.($page+1).'">туда →</a>';
+?>
+</nav>
+    <body>
+</html>

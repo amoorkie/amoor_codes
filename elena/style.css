@@ -1,0 +1,300 @@
+@import "http://fonts.fontstorage.com/import/nexa.css";
+@import "http://fonts.fontstorage.com/import/cabin.css";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	line-height: 1.5rem;
+}
+
+.page__center {
+	width: 600px;
+	margin: 0 auto;
+	z-index: 3;
+}
+
+.header {
+	position: relative;
+	width: 100%;
+	height: 589px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	background-image: url(images/background-header.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	padding: 3.9375rem 0 7.375rem 0;
+}
+.header::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .3);
+}
+.header_caption {
+	text-transform: uppercase;
+}
+.link {
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.logo {
+	font-family: "Bikham Cyr Script", arial;
+	font-size: 3.25rem;
+}
+.header_list {
+	margin: 2.6875rem 0 4.625rem 0;
+	font-family: "Open Sans Semibold", sans-serif;
+	list-style: none;
+}
+.header_list--item {
+	margin: 0 1.09375rem;
+	display: inline-block;
+}
+.header_list--link {
+	color: #fff;
+}
+.have_good_day {
+	font-family: "Ubuntu Bold", sans-serif;
+	font-size: 3.3125rem;
+}
+.just_for_you {
+	margin: 2.5rem 0 4.5625rem 0;
+}
+.header_button {
+	background-color: #50c3af;
+	padding: 1.125rem 3.125rem;
+	color: #fff;
+	border-radius: 30px;
+}
+.just_for_you,
+.header_button {
+	font-family: "PTSans", sans-serif;
+	font-weight: bold;
+	font-size: 1.06rem;
+}
+
+.section_icons {
+	padding: 3.5rem 0.3125rem 4.1875rem 0.3125rem;
+	display: flex;
+	justify-content: center;
+}
+.section_icons-div_icon {
+	text-align: center;
+	margin-right: 6.8125rem;
+}
+.section_icons-div_icon:last-child {
+	margin-right: 0;
+}
+.div_icon-caption {
+	text-transform: uppercase;
+	font-family: "PTSans Bold", sans-serif;
+	font-size: 1rem;
+	color: #40474e;
+	margin: 2rem 0 2.9375rem 0;
+}
+.div_icon-p {
+	font-family: "PTSans Regular", sans-serif;
+	font-size: 0.875rem;
+	color: #787b80;
+}
+
+.content_caption {
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-size: 1.125rem;
+	font-weight: bold;
+	color: #40474e;
+}
+.content_paragraph {
+	font-size: 0.875rem;
+	color: #787b80;
+}
+.content_button {
+	font-size: 0.875rem;
+	text-decoration: none;
+	padding: 0.875rem 1.0625rem;
+	color: #fff;
+	background-color: #50c3af;
+	border-radius: 50px;
+}
+.content_caption,
+.content_paragraph,
+.content_button {
+	font-family: "PTSans", sans-serif;
+}
+
+.content-1 {
+	display: flex;
+	padding: 4.0625rem 0 4.875rem 0;
+}
+.content-1_block-1 {
+	margin-right: 50px;
+}
+.block_picture {
+	height: 167px;
+	background-repeat: no-repeat;
+}
+.content-1_caption {
+	margin: 2.5rem 0 1.375rem 0;
+}
+.content-1_paragraph {
+	margin: 2.125rem 0 2.25rem 0;
+}
+
+.content-2 {
+	padding: 3.75rem 0 3.9375rem 0;
+}
+.content-2_icon {
+	position: absolute;
+}
+.content-2_caption {
+	position: relative;
+	margin-left: 37px;
+	margin-bottom: 1.4375rem;
+}
+.content-2_paragraph {
+	margin: 1.6875rem 0 2.25rem 0;
+}
+.content_button-silver {
+	background-color: #d2d5da;
+}
+
+.content-3 {
+	padding: 3.5rem 0 4.375rem 0;
+	display: flex;
+}
+.content-3_block-1,
+.content-3_block-2 {
+	margin-right: 23px;
+}
+.content-3_block-picture {
+	height: 138px;
+	background-repeat: no-repeat;
+}
+.content-3_caption {
+	margin: 2.5625rem 0 1.25rem 0;
+	font-size: 1rem;
+}
+.content-3_paragraph {
+	margin: 1.625rem 0 1.9375rem 0;
+}
+.content-3_link {
+	position: relative;
+	text-decoration: none;
+	font-family: "PTSans", sans-serif;
+	font-size: 0.875rem;
+	color: #50c3af;
+}
+.content-3_link::after {
+	content: "\f105";
+	font-family: "FontAwesome";
+	position: absolute;
+	right: -13px;
+}
+
+.content-4 {
+	padding: 3.8125rem 0;
+	display: flex;
+}
+.content-4_block-1 {
+	margin-right: 78px;
+}
+.content-4_icon {
+	position: absolute;
+}
+.content-4_caption {
+	position: relative;
+	margin-left: 30px;
+	margin-bottom: 1.1875rem;
+}
+.content-4_paragraph {
+	margin: 1.75rem 0 2.4375rem 0;
+}
+
+.content-5 {
+	padding: 3.875rem 0;
+	display: flex;
+}
+.content-5_picture {
+	width: 571px;
+	height: 208px;
+	background-repeat: no-repeat;
+}
+.content-5_block {
+	margin-left: 34px;
+}
+.content-5_caption {
+	margin-bottom: 1.4375rem;
+}
+.content-5_paragraph {
+	margin: 1.9375rem 0 2rem 0;
+}
+
+.content-6 {
+	display: flex;
+	align-items: center;
+	flex-flow: column nowrap;
+	padding: 3.3125rem 0 4.625rem 0;
+}
+.content-6_icon {
+	position: absolute;
+	left: -25px;
+}
+.content-6_caption {
+	position: relative;
+	font-size: 0.9375rem;
+	color: #fff;
+	margin-left: 30px;
+	margin-bottom: 1.375rem;
+	font-family: "PTSans", sans-serif;
+	font-weight: bold;
+}
+.content-6-sponsors_list {
+	display: flex;
+	list-style: none;
+	margin-top: 2.8125rem;
+}
+.content-6-sponsors_list-item {
+	margin-right: 3.9375rem;
+}
+.content-6-sponsors_list-item:last-child {
+	margin-right: 0;
+}
+.content-6-sponsors_list-link {
+	text-decoration: none;
+	font-size: 1.625rem;
+	color: #fff;
+}
+
+.footer {
+	padding: 1.5rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer_paragraph {
+	font-family: "PTSans", sans-serif;
+	font-size: 0.8125rem;
+	color: #787b80;
+}
+.footer_paragraph-span {
+	color: #aaacaf;
+}
+.footer_social-icons-link {
+	font-size: 2rem;
+	text-decoration: none;
+	color: #bcbdbf;
+	margin: 0 0.1rem;
+}

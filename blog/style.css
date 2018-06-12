@@ -1,0 +1,41 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Блоки */
+header {
+	width:850px;
+	height:200px;
+	margin:5px auto;
+	border-radius:6px;
+	background:white url('https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076533_960_720.jpg') no-repeat top left; /* можете скачать картинку в интернете */
+	background-size: cover;
+}
+
+article {
+	width: 850px;
+	height: 850px;
+	margin: auto;
+	background: radial-gradient(transparent, pink);
+}
+
+article section {
+	border-bottom:1px dashed #BDECFE;
+}
+
+article section h2 {
+	color:#41738A;
+	font-size:17pt;
+}
+
+article section p {
+	font-size:10pt;
+}
+
+article section p.date {
+	font-size:9pt;
+	color:#516168;
+	text-align:right;
+	margin-bottom:0px;
+	padding-bottom:0px;
+}
