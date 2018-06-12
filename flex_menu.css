@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	color: #000;
+}
+
+.page__center {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	height: 10%;
+	padding: 5px;
+}
+
+.link {
+	text-decoration: none;
+	color: #000;
+}
+
+.header__logo--picture {
+	background-size: 200px;
+}
+
+.header__nav {
+	flex-basis: 60%;
+}
+.header__nav--list {
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+	font-size: 1.1rem;
+}
+.nav__list--link:hover {
+	color: #f44336;
+}
+
+.header__contacts--p {
+	text-align: right;
+	color: silver;
+}
+.contacts__link {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.picture {
+	width: 100%;
+	height: 50%;
+	background: url(https://www.artsfon.com/pic/201603/2560x1600/artsfon.com-83184.jpg)
+	no-repeat center center;
+	background-size: cover;
+}
+
+.content {
+	display: flex;
+	margin-top: 1.5rem;
+	flex-flow: row wrap;
+}
+.content-2 {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.block-1 {background-image: url(https://pp.userapi.com/c543108/v543108914/292ee/DzB4iTS-kTo.jpg);}
+.block-2 {background-image: url(https://pp.userapi.com/c841236/v841236252/28d71/xtPetSwpPUo.jpg);}
+.block-3 {background-image: url(https://pp.userapi.com/c7006/v7006830/2e23e/_x41_mXASAA.jpg);}
+.block-4 {background-image: url(https://pp.userapi.com/c303910/v303910095/53fe/q6r8MBddd3Y.jpg);}
+.block-5 {background-image: url(https://pp.userapi.com/c7006/v7006642/25ed2/F_Q5L5EWU1g.jpg);}
+.block-6 {background-image: url(https://pp.userapi.com/c635103/v635103957/422e5/C31mBytgaMw.jpg);}
+
+.content__block {
+	flex: 1;
+	height: 30%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition: .3s;
+}
+
+.content__block:hover {
+	flex: 2;
+}
+
+@media screen and (max-width: 560px) {
+	.header {
+		display: none;
+	}
+}

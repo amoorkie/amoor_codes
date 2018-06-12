@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow: hidden;
+	background-image: url(https://pp.userapi.com/c844320/v844320527/39e47/_ISZzWpwR_g.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.perspective {
+	perspective: 900px;
+}
+
+.cube {
+	height: 100%;
+	transform-origin: 50% 50% -200px;
+	transform-style: preserve-3d;
+
+	position: relative;
+
+	animation-name: cube_animate;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.cube__side {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(180, 0, 0, .4);
+	
+	transform-origin: 50% 50% -200px;
+	transform-style: preserve-3d;
+
+	background-size: cover;
+	background-position: center center;
+}
+
+.side-1 {
+	background-image: url(https://pp.userapi.com/c844320/v844320527/39e47/_ISZzWpwR_g.jpg);
+}
+.side-2 {
+	transform: rotateX(90deg);
+	background-image: url(https://pp.userapi.com/c844320/v844320527/39e47/_ISZzWpwR_g.jpg);
+}
+.side-3 {
+	transform: rotateX(-90deg);
+	background-image: url(https://pp.userapi.com/c844320/v844320527/39e47/_ISZzWpwR_g.jpg)
+}
+.side-4 {
+	transform: rotateY(90deg);
+	background-image: url(https://pp.userapi.com/c844320/v844320527/39e47/_ISZzWpwR_g.jpg)
+}
+.side-5 {
+	transform: rotateY(-90deg);
+	background-image: url(https://pp.userapi.com/c844320/v844320527/39e47/_ISZzWpwR_g.jpg)
+}
+.side-6 {
+	transform: rotateY(-180deg);
+	background-image: url(https://pp.userapi.com/c844320/v844320527/39e47/_ISZzWpwR_g.jpg)
+}
+
+@keyframes cube_animate {
+	from {
+		transform: rotateX(0deg) rotateY(0deg);
+	}
+	to {
+		transform: rotateX(360deg) rotateY(360deg);
+	}
+}

@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#wrapper {
+	perspective: 500px;
+	margin: 350px;
+	margin-left: 380px;
+}
+
+#model {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	transform-origin: 50% 50% -150px;
+	transform-style: preserve-3d;
+	transform: rotateY(80deg);
+
+	animation-name: model_animate;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.side {
+	width: 300px;
+	height: 300px;
+	background: rgba(0, 0, 0, .3);
+	transform-origin: 50% 50% -150px;
+	position: absolute;
+	text-align: center;
+	line-height: 300px;
+	color: #fff;
+	font-size: 4em;
+}
+
+
+@keyframes model_animate {
+	0% {
+		transform: rotateX(0deg) rotateY(0deg);
+	}
+	100% {
+		transform: rotateX(360deg) rotateY(360deg);
+	}
+}
+
+
+.side2 {
+	transform: rotateY(90deg);
+}
+.side3 {
+	transform: rotateY(-90deg);
+}
+.side4 {
+	transform: rotateX(90deg);
+}
+.side5 {
+	transform: rotateX(-90deg);
+}
+.side6 {
+	transform: rotateX(-180deg);
+}
+.side7 {
+	height: 255px;
+	transform: rotateX(65deg);
+	top: 0;
+	transform-origin: top left;
+}
+.side8 {
+	height: 200px;
+	transform: rotateX(40deg);
+	top: 0;
+	transform-origin: top left;
+	line-height: 200px;
+}

@@ -1,0 +1,77 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	margin-right: 10px;
+	margin-left: 10px;
+	background: snow;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	margin-top: 100px;
+	position: relative;
+}
+
+ul li {
+	display: inline-block;
+	width: calc(100% / 5);
+	margin-right: -4px;
+	border-top: 10px solid;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+	transition: .3s;
+}
+ul li h2 {
+	margin: 15px 0;
+}
+ul li p {
+	margin: 0;
+}
+ul li:nth-child(1) {
+	border-color: darkred;
+}
+ul li:nth-child(2) {
+	border-color: firebrick;
+}
+ul li:nth-child(3) {
+	border-color: crimson;
+}
+ul li:nth-child(4) {
+	border-color: indianred;
+}
+ul li:nth-child(5) {
+	border-color: salmon;
+}
+ul li:last-child {
+	margin-right: 0;
+}
+
+ul li h2 {
+	line-height: 0px;
+}
+
+ul li:hover {
+	color: whitesmoke;
+}
+ul li:hover:nth-child(1) {
+	background-color: darkred;
+}
+ul li:hover:nth-child(2) {
+	background-color: firebrick;
+}
+ul li:hover:nth-child(3) {
+	background-color: crimson;
+}
+ul li:hover:nth-child(4) {
+	background-color: indianred;
+}
+ul li:hover:nth-child(5) {
+	background-color: salmon;
+}

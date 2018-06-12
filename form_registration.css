@@ -1,0 +1,124 @@
+* {
+	box-sizing: border-box;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url("http://www.kartinki.me/images/201309/kartinki.me_15964.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: -150px;
+}
+
+.container {
+	width: 500px;
+	height: 500px;
+	margin: 220px auto;
+	text-align: center;
+	padding-top: 125px;
+}
+.container form {
+	background-color: rgba(135, 206, 250, 0.3);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	position: relative;
+	transition: 0.4s;
+	border-radius: 4px;
+}
+.container form:hover {
+	background-color: rgba(135, 206, 250, 0.8);
+}
+input {
+	height: 40px;
+	margin-bottom: 10px;
+	padding-left: 40px;
+	font-size: 14px;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+}
+input[name="login"], input[name="email"], input[name="tel"] {
+	float: left;
+	margin-left: 30px;
+}
+input[name="name"], input[name="password"], input[name="site"] {
+	float: right;
+	margin-right: 30px;
+}
+input[type="submit"] {
+	margin-bottom: 0;
+	background-color: deepskyblue;
+	border: none;
+	border-bottom: 3px solid lightcyan;
+	border-radius: 2px;
+}
+.input:before {
+	font-family: FontAwesome;
+	font-size: 28px;
+	content: "\f007";
+	position: absolute;
+	color: steelblue;
+}
+.text:before {
+	left: 35px;
+	top: 35px;
+}
+.pass:before {
+	content: "\f023";
+	right: 215px;
+	top: 35px;
+}
+.email:before {
+	content: "\f1fa";
+	left: 35px;
+	top: 85px;
+	font-weight: bold;
+}
+.name:before {
+	content: "\f2c2";
+	right: 210px;
+	top: 88px;
+	font-size: 23px;
+}
+.tel:before {
+	content: "\f1e4";
+	left: 35px;
+	top: 137px;
+	font-size: 25px;
+}
+.site:before {
+	content: "\f0e8";
+	right: 210px;
+	top: 137px;
+	font-size: 23px;
+}
+.go:before {
+	content: "\f25d";
+	left: 170px;
+	top: 185px;
+}
+
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.icons {
+	margin-top: 20px;
+}
+.icons a {
+	font-size: 30px;
+	color: lightskyblue;
+	margin-right: 10px;
+	transition: .3s;
+}
+.icons a:last-child {
+	margin-right: 0;
+}
+.icons a:hover {
+	color: #fff;
+}

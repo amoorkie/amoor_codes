@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.buttons {
+	position: relative;
+	top: 200px;
+	left: 200px;
+}
+
+.link {
+	display: inline-block;
+	border: 2px solid;
+	padding: 15px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Roboto, sans-serif;
+	font-size: 17px;
+	margin-right: 30px;
+}
+.link:last-child {
+	margin-right: 0;
+}
+
+.link-first {
+	border-color: darkred;
+	color: darkred;
+	box-shadow: -6px 6px 0 rgba(139, 0, 0, 1);
+
+	animation-name: link-first;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+}
+.link-second {
+	border-color: violet;
+	color: violet;
+	box-shadow: -6px 6px 0 rgba(238, 130, 238, 1);
+
+	animation-name: link-second;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+}
+.link-third {
+	border-color: indianred;
+	color: indianred;
+	box-shadow: -6px 6px 0 rgba(205, 92, 92, 1);
+
+	animation-name: link-third;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+}
+
+@keyframes link-first {
+	from {
+		color: darkred;
+
+	}
+	50% {
+		box-shadow: none;
+	}
+	to {
+		background-color: darkred;
+		color: #fff;
+		box-shadow: -6px 6px 0 rgba(139, 0, 0, 1);
+	}
+}
+@keyframes link-second {
+	from {
+		color: violet;
+
+	}
+	50% {
+		box-shadow: none;
+	}
+	to {
+		background-color: violet;
+		color: #fff;
+		box-shadow: -6px 6px 0 rgba(238, 130, 238, 1);
+	}
+}
+@keyframes link-third {
+	from {
+		color: indianred;
+
+	}
+	50% {
+		box-shadow: none;
+	}
+	to {
+		background-color: indianred;
+		color: #fff;
+		box-shadow: -6px 6px 0 rgba(205, 92, 92, 1);
+	}
+}

@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+}
+
+.header {
+	display: inline-block;
+	width: 1233px;
+	height: 110px;
+	background: #2E9AFF;
+	margin-top: 50px;
+}
+
+.header-h1 {
+	text-align: center;
+	color: #fff;
+	font-family: "Century Gothic", sans-serif;
+	font-size: 35px;
+	font-weight: 1;
+	line-height: 110px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+
+.div-image {
+	display: inline-block;
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+	margin-top: 30px;
+	margin-right: 13px;
+	cursor: pointer;
+}
+.div-image:last-child {
+	margin-right: 0;
+	margin-top: 13px;
+
+}
+
+.image {
+	transition: 1s;
+}
+.image:hover {
+	transform: scale(1.2);
+}

@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+}
+
+.wrapper {
+	display: inline-block;
+	perspective: 900px;
+}
+
+.main-article {
+	width: 650px;
+	height: 350px;
+	padding: 25px;
+	border: 1px solid;
+	margin-bottom: 25px;
+	margin-top: 200px;
+	cursor: pointer;
+}
+.main-article:hover .article {
+	transform: rotateX(-180deg);
+	transform-origin: 50% 50%;
+}
+
+.article {
+	width: 600px;
+	height: 300px;
+	position: relative;
+
+
+	
+	/*Получится эффект поворачивания на месте,
+	если убрать эту строку из кода*/
+	transform-style: preserve-3d;
+	transition: 6s;
+	transform: rotateY(0deg);
+}
+
+.article-img {
+	position: absolute;
+	
+	height: 300px;
+}
+
+.article-short-description {
+	width: 600px;
+	height: 300px;
+	position: relative;
+	background: silver;
+	padding: 15px;
+	
+	transform-origin: 50% 50% -300px;
+	transform: rotateX(-180deg);
+}
+.article-p {
+	text-align: justify;
+	font-family: Roboto, sans-serif;
+	font-size: 17px;
+
+}

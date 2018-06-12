@@ -1,0 +1,64 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	position: absolute;
+	top: 250px;
+	left: 0;
+}
+
+.container .icon {
+	width: 50px;
+	height: 40px;
+	transition: .3s;
+}
+.container .color {
+	z-index: 100;
+	height: 40px;
+}
+.container .icon a {
+	color: #fff;
+	font-size: 21px;
+	display: block;
+	text-align: center;
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.container .fb {background-color: #3a579a;}
+.container .tw {background-color: #00abf0;}
+.container .go {background-color: #df4a32;}
+.container .in {background-color: #127bb6;}
+
+/*Animate*/
+
+.container .icon:hover {
+	width: 45px;
+	border-left: 5px solid rgba(0, 0, 0, .4);
+}
+.container .icon:hover .color {
+	background-color: rgba(0, 0, 0, .2);
+}
+
+.container .icon:hover a {
+	color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+
+
+

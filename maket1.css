@@ -1,0 +1,121 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Header*/
+
+header {
+	width: 100%;
+	height: 500px;
+	background-image: url("https://vignette.wikia.nocookie.net/daredevil4500/images/7/7a/Сорвиголова_сериал.jpg/revision/latest?cb=20160322234811&path-prefix=ru");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: helvetica;
+}
+header p {
+	font-size: 38px;
+	font-family: helvetica;
+	color: #fff;
+	position: relative;
+	top: 200px;
+	margin-left: 10px;
+	margin-bottom: 15px;
+}
+header p + p {
+	width: 290px;
+	height: 50px;
+	font-size: 17px;
+	text-align: justify;
+}
+
+ul {
+	list-style: none;
+	position: absolute;
+	top: 30px;
+	left: 200px;
+}
+ul li {
+	display: inline-block;
+}
+ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+	margin-right: 10px;
+	transition: 0.5s;
+
+}
+ul li a:hover {
+	font-size: 27px;
+	color: #000;
+	border-bottom: 2px solid #000;
+}
+
+header .button {
+	float: right;
+	position: relative;
+	top: 325px;
+	right: 25px;
+	display: inline-block;
+	margin-left: 10px;
+}
+header .button a {
+	color: #fff;
+	font-size: 30px;
+	transition: 0.2s;
+	opacity: 0.5;
+}
+header .button a:hover {
+	font-size: 35px;
+	opacity: 1;
+}
+
+header .vk a:hover {color: #507299;}
+header .fb a:hover {color: #3b5998;}
+header .tw a:hover {color: #33bdf1;}
+header .in a:hover {color: violet;}
+header .ok a:hover {color: #ee8208;}
+header .yt a:hover {color: #e62117;}
+
+/*Content*/
+.container {
+	width: 100%;
+	border: 2px solid silver;
+	background-color: darkred;
+}
+.column {
+	width: calc(870px / 3);
+	height: 250px;
+	float: left;
+	margin-right: 15px;
+	margin-top: 15px;
+	background: firebrick;
+	display: inline-block;
+}
+.column:nth-child(3n) {
+	margin-right: 0;
+}
+
+.center {
+	width: 75%;
+	display: block;
+	clear: both;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+footer {
+	width: 100%;
+	height: 300px;
+	background-color: indianred;
+	margin-top: 15px;
+	position: relative;
+	bottom: 0;
+}

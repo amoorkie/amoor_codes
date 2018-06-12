@@ -1,0 +1,236 @@
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				background: url("https://mz-prod.s3.amazonaws.com/uploads/photo/file/322917/large_062a1819911b0db2e2feb4b88e9f063a-03-mr-robot.w1200.h630.jpg") no-repeat  center center;
+				background-size: cover;
+				background-attachment: fixed;
+				margin: 0;
+			}
+
+			header {
+				width: 100%;
+				background-color: rgba(0, 0, 0, 0.3);
+			}
+			.main-menu {
+				padding: 0;
+				margin: 0;
+				position: relative;
+				margin-left: 210px;
+			}
+			.main-menu > li {
+				display: inline-block;
+				border-left: 2px solid silver;
+				border-right: 2px solid silver;
+				margin-right: -6px;
+				list-style: none;
+				transition: 0.5s;
+			}
+			.main-menu > li > a {
+				color: #fff;
+				text-decoration: none;
+				font-size: 23px;
+				font-family: cursive;
+				padding: 15px 40px 15px 10px;
+				display: block;
+				transition: 0.4s;
+			}
+			.main-menu .header-icon {
+				width: 7px;
+				position: relative;
+				right: -15px;
+				top: 6px;
+				float: right;
+			}
+			.main-menu > li > a:hover {
+				background-color: rgba(0, 0, 0, 1);
+			}
+			.main-menu .sub-menu {
+				width: 150px;
+				padding: 0;
+				margin: 0;
+				position: absolute;
+				background-color: rgba(0, 0, 0, 0.3);
+				display: none;
+			}
+			.main-menu .sub-menu li {
+				padding: 0;
+				list-style: none;
+				border-bottom: 2px solid black;
+			}
+			.main-menu .sub-menu li a {
+				display: block;
+				padding: 10px 15px;
+				color: #fff;
+				text-decoration: none;
+				font-family: cursive;
+				transition: 0.4s;
+			}
+			.main-menu .sub-menu a:hover {
+				background-color: rgba(0, 0, 0, 0.4);
+			}
+			.main-menu li:hover .sub-menu {
+				display: block;
+			}
+
+			.container {
+				width: 51px;
+				position: fixed;
+				left: 0;
+				top: 300px;
+				display: block;
+				z-index: 100;
+			}
+			.container .button {
+				width: 50px;
+				height: 40px;
+				position: relative;
+				float: left;
+				font-size: 30px;
+				transition: 0.5s;
+			}
+			.container a {
+				color: #fff;
+				position: relative;
+				top: 5px;
+				text-decoration: none;
+				text-align: center;
+			}
+			.container .text {
+				font-size: 16px;
+				position: relative;
+				top: 3px;
+				display: none;
+			}
+			.container .button:hover .text {
+				display: block;
+			}
+
+			.container .vk {background-color: #507299;}
+			.container .fb {background-color: #3b5998;}
+			.container .tw {background-color: #33bdf1;}
+			.container .in {background-color: violet;}
+			.container .ok {background-color: #ee8208;}
+			.container .yt {background-color: #e62117;}
+
+			.container .button:hover {
+				width: 60px;
+				height: 60px;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+			.container .button:hover a {
+				transition: 0s;
+			}
+
+
+			.row {
+				width: 80%;
+				height: 1000px;
+				background-color: #CAC4C4;
+				float: left;
+				position: relative;
+				top: 239px;
+				left: 100px;
+			}
+			.clearfix:after {
+				content: "";
+				height: 10px;
+				display: block;
+				clear: both;
+			}
+
+			footer {
+				width: 100%;
+				height: 60px;
+				background: rgba(0, 0, 1, 0.7);
+				position: relative;
+				bottom: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<ul class = "main-menu">
+				<li><a href = "#">О нас
+					<div class = "header-icon"><i class="far fa-window-restore"></i></div>
+				</a></li>
+				<li><a href = "#">Медиа
+					<div class = "header-icon"><i class="fas fa-camera"></i></div>
+					</a>
+					<ul class = "sub-menu">
+						<li><a href = "#">Фотографии</a></li>
+						<li><a href = "#">Видео</a></li>
+						<li><a href = "#">Картинки</a></li>
+					</ul>
+				</li>
+				<li><a href = "#">Контакты
+					<div class = "header-icon"><i class="fas fa-address-card"></i></div>
+				</a></li>
+				<li><a href = "#">Новости
+					<div class = "header-icon"><i class="far fa-newspaper"></i></div>
+				</a></li>
+				<li><a href = "#">Музыка
+					<div class = "header-icon"><i class="fas fa-music"></i></div>
+					</a>
+					<ul class = "sub-menu">
+						<li><a href = "#">Рок</a></li>
+						<li><a href = "#">Хип-хоп</a></li>
+						<li><a href = "#">Поп</a></li>
+						<li><a href = "#">Фолк</a></li>
+					</ul>
+				</li>
+				<li><a href = "#">Книги
+					<div class = "header-icon"><i class="fas fa-book"></i></div>
+				</a></li>
+			</ul>
+		</header>
+		<div class = "container">
+			<div class = "button vk">
+				<a href = "https://vk.com/feed" target = "_blank">
+					<div class = "icon"><i class="fab fa-vk" aria-hidden = "true"></i></div>
+					<div class = "text">145</div>
+				</a>
+			</div>
+			<div class = "button fb">
+				<a href = "https://www.facebook.com/roman.klimychev.39" target = "_blank">
+					<div class = "icon"><i class="fab fa-facebook-f" aria-hidden = "true"></i></div>
+					<div class = "text">1425</div>
+				</a>
+			</div>
+			<div class = "button tw">
+				<a href = "https://twitter.com" target = "_blank">
+					<div class = "icon"><i class="fab fa-twitter"></i></div>
+					<div class = "text">223</div>
+				</a>
+			</div>
+			<div class = "button in">
+				<a href = "https://www.instagram.com" target = "_blank">
+					<div class = "icon"><i class="fab fa-instagram"></i></div>
+					<div class = "text">1324</div>
+				</a>
+			</div>
+			<div class = "button ok">
+				<a href = "https://ok.ru/" target = "_blank">
+					<div class = "icon"><i class="fab fa-odnoklassniki"></i></div>
+					<div class = "text">1123</div>
+				</a>
+			</div>
+			<div class = "button yt">
+				<a href = "https://www.youtube.com" target = "_blank">
+					<div class = "icon"><i class="fab fa-youtube"></i></div>
+					<div class = "text">3321</div>
+				</a>
+			</div>
+		</div>
+		<div class = "row clearfix">
+			<div class = "content"></div>
+		</div>
+		<footer></footer>
+	</body>
+</html>
