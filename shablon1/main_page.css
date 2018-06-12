@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*HEADER*/
+header {
+	width: 100%;
+	height: 600px;
+	position: relative;
+	background-image: url(https://img1.goodfon.ru/original/1680x1050/b/73/ozero-les-eli-dom-gory-tuman.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	box-shadow: 0 0 100px 0px rgba(0, 0, 0, 1);
+}
+header .shadow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .3);
+}
+header p {
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+}
+header p a, header p span {
+	color: #fff;
+	text-decoration: none;
+	font-family: Arial;
+	position: relative;
+}
+header p a:before {
+	position: absolute;
+	bottom: -100%;
+	content: "";
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	transition: .4s;
+	opacity: 0;
+}
+header p a:hover:before {
+	bottom: -15%;
+	opacity: 1;
+}
+header h1 {
+	display: block;
+	padding-top: 200px;
+	color: whitesmoke;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 40px;
+}
+
+/*/HEADER*/
+
+/*BODY_CONTAINER*/
+
+.body_container {
+	width: 100%;
+	height: 1000px;
+	position: relative;
+	padding-top: 150px;
+}
+.body_container .main_post {
+	width: 90%;
+    height: 450px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    position: relative;
+    border: 1px solid silver;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 0px 6px 3px rgba(0, 0, 0, .2);
+    transition: .1s;
+}
+.body_container .main_post:hover {
+	box-shadow: 0 0px 30px 3px rgba(0, 0, 0, .5);
+}
+.body_container .post {
+	width: 95%;
+    height: calc(100% - 56px);
+    position: relative;
+    margin: 0 auto;
+}
+.body_container .post .img_post {
+	position: relative;
+	width: calc(100% / 2);
+	height: 100%;
+	border-radius: 7px 0 0 7px;
+	float: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.body_container .post .text_post {
+	position: relative;
+	width: calc(100% / 2);
+	height: 100%;
+	float: right;
+	padding: 0 15px;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	text-align: justify;
+}
+/*POSTS*/
+
+.body_container .main_post h1 {
+	margin-bottom: 20px;
+	margin-left: 26px;
+    color: dimgrey;
+    font-family: Arial, sans-serif;
+}
+
+.body_container .post .img1 {
+	background-image: url(https://static.kulturologia.ru/files/u20225/springheel_jack_11.jpg);
+}
+.body_container .post .img2 {
+	background-image: url(http://st.antik-war.com/9/1246/857/IMG_0097.jpg);
+}
+.body_container .post .img3 {
+	background-image: url(https://mfst.igromania.ru/wp-content/uploads/2015/09/from_hell1.jpg);
+}
+
+/*/POSTS*/
+
+
+
+
+
+
+
+
+
+
+
+/*BODY_CONTAINER*/
